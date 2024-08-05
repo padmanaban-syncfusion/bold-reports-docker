@@ -57,7 +57,7 @@ services:
     image: us-docker.pkg.dev/boldreports/v6-1-45/boldreports-server:6.1.45
     restart: on-failure
     environment: 
-      - BOLD_SERVICES_HOSTING_ENVIRONMENT=docker 
+      - BOLD_SERVICES_HOSTING_ENVIRONMENT=Docker 
     volumes: 
       - boldservices_data:/application/app_data
     networks:
@@ -75,7 +75,7 @@ services:
     image: us-docker.pkg.dev/boldreports/v6-1-45/boldreports-server-api:6.1.45
     restart: on-failure
     environment: 
-      - BOLD_SERVICES_HOSTING_ENVIRONMENT=docker 
+      - BOLD_SERVICES_HOSTING_ENVIRONMENT=Docker 
     volumes: 
       - boldservices_data:/application/app_data
     networks:
@@ -94,7 +94,7 @@ services:
     image: us-docker.pkg.dev/boldreports/v6-1-45/boldreports-server-jobs:6.1.45
     restart: on-failure
     environment: 
-      - BOLD_SERVICES_HOSTING_ENVIRONMENT=docker 
+      - BOLD_SERVICES_HOSTING_ENVIRONMENT=Docker 
     volumes: 
       - boldservices_data:/application/app_data
     networks:
@@ -132,7 +132,7 @@ services:
     image: us-docker.pkg.dev/boldreports/v6-1-45/boldreports-viewer:6.1.45
     restart: on-failure
     environment: 
-      - BOLD_SERVICES_HOSTING_ENVIRONMENT=docker 
+      - BOLD_SERVICES_HOSTING_ENVIRONMENT=Docker 
     volumes: 
       - boldservices_data:/application/app_data
     networks:
